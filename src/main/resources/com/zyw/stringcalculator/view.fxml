@@ -14,35 +14,32 @@
     </fx:define>
     <StackPane alignment="CENTER_RIGHT" >
         <Rectangle fill="black" stroke="gray" height="50" width="260"></Rectangle>
-        <Text fx:id="output" font="$FONT" stroke="chartreuse" textAlignment="RIGHT">0.</Text>
+        <Text fx:id="output" font="$FONT" stroke="chartreuse" textAlignment="RIGHT"></Text>
     </StackPane>
 
     <HBox spacing="10" alignment="CENTER">
-        <Button font="$FONT" prefWidth="50">7</Button>
-        <Button font="$FONT" prefWidth="50">8</Button>
-        <Button font="$FONT" prefWidth="50">9</Button>
-        <Button font="$FONT" prefWidth="50">/</Button>
-        <Button font="$FONT" prefWidth="50">%</Button>
+        <Button font="$FONT" prefWidth="50" onAction="#handleNumber">7</Button>
+        <Button font="$FONT" prefWidth="50" onAction="#handleNumber">8</Button>
+        <Button font="$FONT" prefWidth="50" onAction="#handleNumber">9</Button>
+        <Button font="$FONT" prefWidth="50" onAction="#handleOperator">/</Button>
     </HBox>
     <HBox spacing="10" alignment="CENTER">
-        <Button font="$FONT" prefWidth="50">4</Button>
-        <Button font="$FONT" prefWidth="50">5</Button>
-        <Button font="$FONT" prefWidth="50">6</Button>
-        <Button font="$FONT" prefWidth="50">*</Button>
-        <Button font="$FONT" prefWidth="50">1/x</Button>
+        <Button font="$FONT" prefWidth="50" onAction="#handleNumber">4</Button>
+        <Button font="$FONT" prefWidth="50" onAction="#handleNumber">5</Button>
+        <Button font="$FONT" prefWidth="50" onAction="#handleNumber">6</Button>
+        <Button font="$FONT" prefWidth="50" onAction="#handleOperator">*</Button>
     </HBox>
     <HBox spacing="10" alignment="CENTER">
-        <Button font="$FONT" prefWidth="50">1</Button>
-        <Button font="$FONT" prefWidth="50">2</Button>
-        <Button font="$FONT" prefWidth="50">3</Button>
-        <Button font="$FONT" prefWidth="50">-</Button>
-        <Button font="$FONT" prefWidth="50">=</Button>
+        <Button font="$FONT" prefWidth="50" onAction="#handleNumber">1</Button>
+        <Button font="$FONT" prefWidth="50" onAction="#handleNumber">2</Button>
+        <Button font="$FONT" prefWidth="50" onAction="#handleNumber">3</Button>
+        <Button font="$FONT" prefWidth="50" onAction="#handleOperator">-</Button>
     </HBox>
     <HBox spacing="10" alignment="CENTER">
-        <Button font="$FONT" prefWidth="100">0</Button>
-        <Button font="$FONT" prefWidth="50">.</Button>
-        <Button font="$FONT" prefWidth="50">+</Button>
-        <Button font="$FONT" prefWidth="50">=</Button>
+        <Button font="$FONT" prefWidth="50" onAction="#handleNumber">0</Button>
+        <Button font="$FONT" prefWidth="50" onAction="#handleNumber">.</Button>
+        <Button font="$FONT" prefWidth="50" onAction="#handleOperator">=</Button>
+        <Button font="$FONT" prefWidth="50" onAction="#handleOperator">+</Button>
     </HBox>
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
