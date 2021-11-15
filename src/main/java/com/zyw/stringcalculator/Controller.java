@@ -1,14 +1,17 @@
 package com.zyw.stringcalculator;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.text.Text;
 
 public class Controller {
-    @FXML
-    private Label welcomeText;
 
     @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
+    private Text output;
+
+    @FXML
+    private void handleNumPad(ActionEvent event) {
+
     }
 }

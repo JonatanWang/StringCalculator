@@ -1,16 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.zyw.stringcalculator.Controller">
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<VBox spacing="10" prefHeight="300" prefWidth="300" xmlns:fx="http://javafx.com/fxml" fx:controller="com.zyw.stringcalculator.Controller">
+    <fx:define>
+        <Font fx:id="FONT" size="20"></Font>
+    </fx:define>
+    <StackPane alignment="CENTER_RIGHT" >
+        <Rectangle fill="black" stroke="gray" height="50" width="260"></Rectangle>
+        <Text fx:id="output" font="$FONT" stroke="chartreuse" textAlignment="RIGHT">0.</Text>
+    </StackPane>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button font="$FONT" prefWidth="50">7</Button>
+        <Button font="$FONT" prefWidth="50">8</Button>
+        <Button font="$FONT" prefWidth="50">9</Button>
+        <Button font="$FONT" prefWidth="50">/</Button>
+        <Button font="$FONT" prefWidth="50">%</Button>
+    </HBox>
+    <HBox spacing="10" alignment="CENTER">
+        <Button font="$FONT" prefWidth="50">4</Button>
+        <Button font="$FONT" prefWidth="50">5</Button>
+        <Button font="$FONT" prefWidth="50">6</Button>
+        <Button font="$FONT" prefWidth="50">*</Button>
+        <Button font="$FONT" prefWidth="50">1/x</Button>
+    </HBox>
+    <HBox spacing="10" alignment="CENTER">
+        <Button font="$FONT" prefWidth="50">1</Button>
+        <Button font="$FONT" prefWidth="50">2</Button>
+        <Button font="$FONT" prefWidth="50">3</Button>
+        <Button font="$FONT" prefWidth="50">-</Button>
+        <Button font="$FONT" prefWidth="50">=</Button>
+    </HBox>
+    <HBox spacing="10" alignment="CENTER">
+        <Button font="$FONT" prefWidth="100">0</Button>
+        <Button font="$FONT" prefWidth="50">.</Button>
+        <Button font="$FONT" prefWidth="50">+</Button>
+        <Button font="$FONT" prefWidth="50">=</Button>
+    </HBox>
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
     </padding>
-
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
 </VBox>
+
